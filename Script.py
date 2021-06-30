@@ -32,7 +32,7 @@ class Encryption:
 			content = bytearray(content)
 
 
-			key = 191
+			key = 192
 			cprint('Encryption Process is in progress...!',color='green',attrs=['bold'])
 			for i,val in tqdm(enumerate(content)):
 				content[i] = val ^ key
@@ -68,7 +68,7 @@ class Decryption:
 
 			cipher_text = encrypted_file_object.read()
 
-			key = 191
+			key = 192
 
 			cipher_text = bytearray(cipher_text)
 
